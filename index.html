@@ -1438,7 +1438,7 @@ html[data-theme="dark"] ::selection{background:rgba(198,164,95,.28)}
 </span>
 </span>
 <span class="ai-launch-end">
-<span class="ai-scope-pill">متصل بخوادم قوقل للذكاء الاصطناعي · م/237</span>
+<span class="ai-scope-pill">متصل عبر Vercel AI Gateway · م/237</span>
 <span aria-hidden="true" class="ai-launch-arrow">←</span>
 </span>
 </button>
@@ -2293,14 +2293,14 @@ html[data-theme="dark"] ::selection{background:rgba(198,164,95,.28)}
 <div class="ai-panel-title">
 <span aria-hidden="true" class="ai-panel-mark"><svg viewbox="0 0 24 24"><path d="M12 3l1.2 3.8L17 8l-3.8 1.2L12 13l-1.2-3.8L7 8l3.8-1.2L12 3Zm6 9 .8 2.2L21 15l-2.2.8L18 18l-.8-2.2L15 15l2.2-.8L18 12ZM7 14l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.55"></path></svg></span>
 <span class="ai-panel-copy">
-<strong id="executionAiTitle">المساعد الذكي <span class="ai-server-badge" id="aiServerStatusBadge">متصل بخوادم قوقل للذكاء الاصطناعي</span></strong>
+<strong id="executionAiTitle">المساعد الذكي <span class="ai-server-badge" id="aiServerStatusBadge">متصل عبر Vercel AI Gateway</span></strong>
 <small>امر تدلل سم وابشر ولبيه لو تطلب عيوني كان قلت العمى خيره امرني بس</small>
 </span>
 </div>
 <div class="ai-head-actions">
-<button class="ai-head-btn" id="aiGeminiConfigBtn" title="إعدادات الربط السحابي المباشر بخوادم Google Gemini" type="button">
+<button class="ai-head-btn" id="aiGeminiConfigBtn" hidden title="إعدادات الربط السحابي" type="button">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M12 2 14.8 9.2 22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg>
-<span>خوادم Gemini</span>
+<span>الاتصال الذكي</span>
 </button>
 <button class="ai-head-btn" id="aiClearChatBtn" title="بدء محادثة جديدة" type="button">
 <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6L4 8.8M4 4v4.8h4.8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
@@ -2325,7 +2325,7 @@ html[data-theme="dark"] ::selection{background:rgba(198,164,95,.28)}
 <a class="ai-official-mini" href="https://www.uqn.gov.sa/decisions-and-regulations/rules-and-regulations/4000869" rel="noopener noreferrer" target="_blank">جريدة أم القرى ↗</a>
 </div>
 </div>
-<div class="ai-gemini-config" id="aiGeminiConfigBar">
+<div class="ai-gemini-config" hidden id="aiGeminiConfigBar">
 <span>⚡ الربط السحابي بـ <b>Google Gemini</b> مفعّل تلقائياً عبر البوابات السحابية، ويمكنك اختيارياً إدخال مفتاح Gemini API خاص بك للربط المخصص:</span>
 <div class="ai-gemini-config-form">
 <input autocomplete="off" class="ai-gemini-key-input" id="aiGeminiKeyInput" placeholder="AIzaSy... (اختياري — مربوط تلقائياً بدون مفتاح)" type="password"/>
@@ -2335,7 +2335,7 @@ html[data-theme="dark"] ::selection{background:rgba(198,164,95,.28)}
 <div aria-live="polite" class="ai-chat" id="aiChat">
 <div class="ai-welcome" id="aiWelcomeBox">
 <div class="ai-welcome-top">
-<strong>مستشار ذكي بحوار حر ومفتوح وبحث موسع في الأنظمة والكتب القانونية السعودية · Google Gemini</strong>
+<strong>مستشار ذكي بحوار حر ومفتوح وبحث موسع في الأنظمة والكتب القانونية السعودية</strong>
 <span class="ai-welcome-tag">حوار حر مباشر · بحث موسع</span>
 </div>
 <p>تحدث معي بحرية تامة كأنك تحاور مستشاراً قانونياً وموسوعياً خبيراً؛ <b>أجيبك مباشرة بتحليل وافٍ ومفصل دون إحالتك للمواد</b>، وأربط في إجابتي بين <b>الأنظمة الرسمية السعودية</b> (نظام التنفيذ الجديد م/237، المعاملات المدنية، المرافعات الشرعية، الإثبات، الأوراق التجارية، الشركات، الإفلاس، والعمل) وبين <b>الكتب والشروح القانونية المختصة والمبادئ القضائية السعودية</b>، فضلاً عن الحوار المفتوح في أي موضوع عام.</p>
@@ -2360,14 +2360,14 @@ html[data-theme="dark"] ::selection{background:rgba(198,164,95,.28)}
 </div>
 <footer class="ai-composer">
 <form class="ai-input-wrap" id="aiForm">
-<textarea aria-label="اكتب رسالتك للمساعد الذكي" autocomplete="off" class="ai-input ai-textarea" id="aiInput" maxlength="3200" placeholder="تحدث مع جيميناي في أي موضوع عام، أو اطرح قضية معقدة أو مسألة حسابية أو نظامية…" rows="1"></textarea>
+<textarea aria-label="اكتب رسالتك للمساعد الذكي" autocomplete="off" class="ai-input ai-textarea" id="aiInput" maxlength="3200" placeholder="تحدث مع المساعد الذكي في أي موضوع عام، أو اطرح قضية معقدة أو مسألة حسابية أو نظامية…" rows="1"></textarea>
 <button class="ai-send" id="aiSend" type="submit">
 <span>اسأل الآن</span>
 <svg aria-hidden="true" height="15" viewbox="0 0 24 24" width="15"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.1"></path></svg>
 </button>
 </form>
 <div class="ai-composer-foot">
-<span>مربوط بخوادم قوقل للذكاء الاصطناعي (Google Gemini) · حوار بشري مفتوح باستثناء المواضيع الحساسة · تدقيق نظامي بنسبة خطأ 0%.</span>
+<span>متصل بالمساعد الذكي عبر Vercel AI Gateway · الإجابات المولدة آليًا قد تحتاج إلى مراجعة عند المسائل القانونية الدقيقة.</span>
 <span>Enter للإرسال · Shift+Enter لسطر جديد</span>
 </div>
 </footer>
@@ -3320,90 +3320,58 @@ const ExecutionAI = (()=>{
       return {text:sens.message, sources:[], isLegal:false, remote:false};
     }
 
-    // جلب موسوعي موازٍ من ويكيبيديا العربية إذا كان السؤال بحثياً أو عاماً
-    const wikiPromise = (!useExecutionContext || q.length > 12) ? fetchLiveWikipediaKnowledge(q) : Promise.resolve(null);
-    const wikiInfo = await Promise.race([wikiPromise, new Promise(r=>setTimeout(()=>r(null), 1800))]);
-
-    const systemPrompt = buildSystemPrompt(useExecutionContext,results,q,wikiInfo);
-    const cleanHistory = (history||[]).slice(-8).map(x=>({
-      role: x.role==='assistant'?'assistant':'user',
-      content: String(x.text||'').slice(0,1200)
-    }));
-    const fullMessages = [
-      {role:'system', content:systemPrompt},
-      ...cleanHistory,
-      {role:'user', content:q}
-    ];
-    const temp = useExecutionContext ? 0.15 : 0.45;
     const matchedSources = useExecutionContext ? results.slice(0,3) : [];
+    const context = useExecutionContext && results?.length
+      ? results.slice(0,3).map(a => [
+          `${a.title || ''}${a.subtitle ? ` — ${a.subtitle}` : ''}`,
+          a.statute ? `النص النظامي: ${a.statute}` : '',
+          a.explain ? `الشرح الميسر: ${a.explain}` : '',
+          a.example ? `مثال تطبيقي: ${a.example}` : ''
+        ].filter(Boolean).join('\n')).join('\n\n---\n\n')
+      : '';
 
-    // 1. الاتصال المباشر بخوادم Google Gemini الرسمية (generativelanguage.googleapis.com)
-    const googleApiKey = String(window.GOOGLE_AI_API_KEY || localStorage.getItem('googleAiApiKey') || '').trim();
-    if(googleApiKey){
-      for(const geminiModel of ['gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.0-flash']){
-        try{
-          const ctrlG = new AbortController();
-          const tG = setTimeout(()=>ctrlG.abort(), 14000);
-          const geminiContents = cleanHistory.map(m=>({
-            role: m.role==='assistant'?'model':'user',
-            parts:[{text:m.content}]
-          }));
-          geminiContents.push({role:'user', parts:[{text:q}]});
-          const resG = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${geminiModel}:generateContent?key=${encodeURIComponent(googleApiKey)}`,{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            signal:ctrlG.signal,
-            body:JSON.stringify({
-              systemInstruction:{parts:[{text:systemPrompt}]},
-              contents:geminiContents,
-              generationConfig:{temperature: temp}
-            })
-          });
-          clearTimeout(tG);
-          if(resG.ok){
-            const dataG = await resG.json().catch(()=>null);
-            const txtG = dataG?.candidates?.[0]?.content?.parts?.map(p=>p.text||'').join('').trim();
-            if(txtG && txtG.length > 15){
-              return {text:txtG, sources:matchedSources, isLegal:useExecutionContext, remote:true, server:geminiModel};
-            }
-          }
-        }catch(_e){}
-      }
-    }
+    const cleanHistory = (history||[]).slice(-8).map(x => ({
+      role: x.role === 'assistant' ? 'assistant' : 'user',
+      content: String(x.text || x.content || '').slice(0,1800)
+    }));
 
-    // 2. الاتصال السحابي الفوري المتوازي عبر بوابات نماذج Google Gemma-4 / Gemini Cloud & Ultra LLMs
+    const apiUrl = location.hostname === 'fahadhunini.github.io'
+      ? 'https://saudi-execution-guide.vercel.app/api/ask'
+      : '/api/ask';
+
+    const ctrl = new AbortController();
+    const timer = setTimeout(()=>ctrl.abort(), 30000);
+
     try{
-      const cloudTasks = [
-        callOpenAICompatible('https://api.kilo.ai/api/gateway/chat/completions', 'google/gemma-4-26b-a4b-it:free', fullMessages, temp, {}, 11000),
-        callOpenAICompatible('https://api.kilo.ai/api/gateway/chat/completions', 'kilo-auto/free', fullMessages, temp, {}, 11000),
-        callOpenAICompatible('https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions', 'qwen3.5-397b-a17b', fullMessages, temp, {}, 11000),
-        callOpenAICompatible('https://api.llm7.io/v1/chat/completions', 'fast', fullMessages, temp, {'Authorization':'Bearer unused'}, 11000),
-        callOpenAICompatible('https://text.pollinations.ai/openai', 'openai', fullMessages, temp, {}, 11000)
-      ];
-      const fastestCloudAnswer = await Promise.any(cloudTasks);
-      if(fastestCloudAnswer){
-        return {text:fastestCloudAnswer, sources:matchedSources, isLegal:useExecutionContext, remote:true, server:'google-gemini-cloud'};
-      }
-    }catch(_raceErr){}
+      const res = await fetch(apiUrl, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        signal:ctrl.signal,
+        body:JSON.stringify({
+          question:q,
+          context,
+          history:cleanHistory
+        })
+      });
 
-    // 3. البوابات السحابية الاحتياطية
-    const backupCloudTargets = [
-      {url:'https://api.kilo.ai/api/gateway/chat/completions', model:'nvidia/nemotron-3-ultra-550b-a55b:free', headers:{}},
-      {url:'https://oai.endpoints.kepler.ai.cloud.ovh.net/v1/chat/completions', model:'meta-llama-3_3-70b-instruct', headers:{}},
-      {url:'https://api.llm7.io/v1/chat/completions', model:'default', headers:{'Authorization':'Bearer unused'}}
-    ];
-    for(const target of backupCloudTargets){
-      try{
-        const txt = await callOpenAICompatible(target.url, target.model, fullMessages, temp, target.headers, 8500);
-        if(txt){
-          return {text:txt, sources:matchedSources, isLegal:useExecutionContext, remote:true, server:target.model};
-        }
-      }catch(_e){}
+      const data = await res.json().catch(()=>null);
+      if(!res.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+
+      const text = String(data?.answer || '').trim();
+      if(!text) throw new Error('Empty AI response');
+
+      return {
+        text,
+        sources:matchedSources,
+        isLegal:useExecutionContext,
+        remote:true,
+        server:'Vercel AI Gateway'
+      };
+    }catch(_e){
+      return answerLocal(q,results,history,useExecutionContext,null);
+    }finally{
+      clearTimeout(timer);
     }
-
-    // 4. المحرك التحليلي الموسع للأنظمة الرسمية والكتب القانونية السعودية (بدون إحالة للمواد)
-    const finalWiki = wikiInfo || await wikiPromise;
-    return answerLocal(q,results,history,useExecutionContext,finalWiki);
   }
 
   function setMode(m){activeMode=m||'all';}
@@ -3434,7 +3402,7 @@ const ExecutionAI = (()=>{
   function updateServerBadge(){
     if(!statusBadge)return;
     const savedKey = String(window.GOOGLE_AI_API_KEY || localStorage.getItem('googleAiApiKey') || '').trim();
-    statusBadge.textContent = savedKey ? 'مربوط مباشرة بـ Google Gemini Pro API' : 'متصل بخوادم قوقل للذكاء الاصطناعي (Gemini)';
+    statusBadge.textContent = 'متصل عبر Vercel AI Gateway';
     if(geminiKeyInput && savedKey) geminiKeyInput.value = savedKey;
   }
   updateServerBadge();
@@ -3538,7 +3506,7 @@ const ExecutionAI = (()=>{
   function addThinking(){
     const d=document.createElement('div');
     d.className='ai-message ai-thinking-row';
-    d.innerHTML='<div class="ai-avatar">AI</div><div class="ai-bubble"><div class="ai-thinking-wrap"><span class="ai-thinking"><i></i><i></i><i></i></span><span>جاري البحث الموسع في الأنظمة الرسمية والكتب القانونية السعودية عبر خوادم Gemini…</span></div></div>';
+    d.innerHTML='<div class="ai-avatar">AI</div><div class="ai-bubble"><div class="ai-thinking-wrap"><span class="ai-thinking"><i></i><i></i><i></i></span><span>جاري تحليل السؤال والاستفادة من محتوى المشروع…</span></div></div>';
     chat.appendChild(d);
     scrollEnd();
     return d;
@@ -3640,7 +3608,7 @@ const ExecutionAI = (()=>{
       showToast('لا توجد رسائل في المحادثة لنسخها بعد');
       return;
     }
-    const transcript = conversationHistory.map(m=>(m.role==='user'?'السؤال: ':'المساعد الذكي (جيميناي):\n')+m.text).join('\n\n────────────────────\n\n');
+    const transcript = conversationHistory.map(m=>(m.role==='user'?'السؤال: ':'المساعد الذكي:\n')+m.text).join('\n\n────────────────────\n\n');
     try{await navigator.clipboard.writeText(transcript);}
     catch(_e){
       const ta=document.createElement('textarea');ta.value=transcript;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove();
